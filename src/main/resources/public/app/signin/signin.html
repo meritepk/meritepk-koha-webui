@@ -1,0 +1,29 @@
+<form class="form-horizontal">
+  <div class="row form-group">
+    <div class="col-sm-12">
+      <h4>Sign in to PakLAG Koha Web UI</h4>
+    </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-sm-2">
+      <label class="control-label">User</label>
+    </div>
+    <div class="col-sm-5">
+      <input ng-model="$ctrl.user.name" type="text" class="form-control" placeholder="Enter User Id" required autofocus>
+    </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-sm-2">
+      <label class="control-label">Password</label>
+    </div>
+    <div class="col-sm-5">
+      <input ng-model="$ctrl.user.password" type="password" class="form-control" placeholder="Enter Password" required>
+    </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-5">
+      <button type="submit" class="btn btn-primary" ng-click="$ctrl.login(inform.$invalid)">Signin</button>
+    </div>
+  </div>
+</form>

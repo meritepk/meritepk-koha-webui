@@ -1,0 +1,40 @@
+<form class="form-horizontal">
+  <div class="row form-group">
+    <div class="col-sm-12">
+      <h4>Bookshelf Search</h4>
+    </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-sm-1">
+      <label class="control-label">Call No</label>
+    </div>
+    <div class="col-sm-5">
+      <input ng-model="$ctrl.callNo" type="text" class="form-control" placeholder="Enter Call No" required autofocus>
+    </div>
+    <div class="col-sm-1">
+      <button type="submit" class="btn btn-primary" ng-click="$ctrl.search(inform.$invalid)">Search</button>
+    </div>
+  </div>
+  <div class="row form-group">
+    <table class="table table-bordered table-striped table-hover table-sm">
+      <thead>
+        <tr>
+          <th>Call No</th>
+          <th>Bookshelf</th>
+          <th>Floor / Room</th>
+          <th>Misc</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="item in $ctrl.bookshelves track by $index">
+          <td>{{item.callNo}}</td>
+          <td>{{item.bookshelf}}</td>
+          <td>{{item.floorRoom}}</td>
+          <td>{{item.description}}</td>
+          <td><img ng-if="item.imageUrl" ng-src="{{item.imageUrl}}" width="100" height="100" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</form>

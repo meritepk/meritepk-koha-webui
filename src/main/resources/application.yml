@@ -1,5 +1,6 @@
 spring:
   application.name: webui
+  resources.static-locations: classpath:/public/,file:images/
 
   datasource.url: jdbc:h2:mem:webui;MODE=MySQL
   datasource.username: webui
@@ -16,11 +17,13 @@ spring:
 
 security:
   user:
-    name: webui
-    password: changeit13579
-    roles: ACTUATOR, ADMIN
-  ignored: /inde.html, /webjars/**, /h2-console**
+    name: admin
+    password: $2a$10$GMmB1mbxYwMd8Cm68Y/J8O8VXAmQc1LhYkNXF5yNF4arppTwPnMqm
+    roles: ACTUATOR,ADMIN
 
 server:
   port: 8080
   contextPath: /webui
+
+management:
+  context-path: /actuator
