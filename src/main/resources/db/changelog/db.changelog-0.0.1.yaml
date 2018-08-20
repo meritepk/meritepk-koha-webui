@@ -1,0 +1,35 @@
+databaseChangeLog:
+- changeSet:
+    id: 0.0.1
+    changes:
+    - createTable:
+        tableName: bookshelf
+        columns:
+        - column:
+            autoIncrement: true
+            constraints:
+              primaryKey: true
+              primaryKeyName: bookshelf_pk
+            name: id
+            type: bigint
+        - column:
+            name: call_no
+            type: VARCHAR(255)
+        - column:
+            name: bookshelf
+            type: VARCHAR(255)
+        - column:
+            name: floor_room
+            type: VARCHAR(255)
+        - column:
+            name: image_url
+            type: VARCHAR(255)
+        - column:
+            name: description
+            type: VARCHAR(255)
+    - createIndex:
+        tableName: bookshelf
+        indexName: bookshelf_ix_01
+        columns:
+        - column:
+            name: call_no

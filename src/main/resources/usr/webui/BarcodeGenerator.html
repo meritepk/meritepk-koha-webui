@@ -1,0 +1,93 @@
+<TABLE align='left' border='0'>
+	<TR>
+		<TD colspan='3' align='left'>
+			<FONT color="#0878A6" face="Verdana,Arial,Helvetica" size="3"><B>Barcodes Generator</B></FONT>
+		</TD>
+	</TR>
+	<TR>
+		<TD colspan='2' align='left'>
+			<FONT color="#0878A6" face="Verdana,Arial,Helvetica" size="2"><B>Text Above Label</B></FONT>
+		</TD>
+		<TD align='left'>
+			<INPUT type='text' name='txtAboveLabel' id='txtAboveLabel' value=''>
+		</TD>
+	</TR>
+	<TR>
+		<TD colspan='2' align='left'>
+			<FONT color="#0878A6" face="Verdana,Arial,Helvetica" size="2"><B>Text Below Label</B></FONT>
+		</TD>
+		<TD align='left'>
+			<INPUT type='text' name='txtBelowLabel' id='txtBelowLabel' value=''>
+		</TD>
+	</TR>
+	<TR>
+		<TD colspan='2' align='left'>
+			<INPUT type='radio' name='txtInterval' id='txtInterval' value='individual' checked>
+			<FONT color="#0878A6" face="Verdana,Arial,Helvetica" size="2"><B>Individual Codes</B></FONT>
+		</TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD colspan='2' align='right'>
+			<FONT color="#0878A6" face="Verdana,Arial,Helvetica" size="2"><B>Barcodes: </B></FONT>
+		</TD>
+		<TD align='left'>
+			<INPUT type='text' name='txtBarcode' id='txtBarcode' value=''>
+		</TD>
+	</TR>
+	<TR>
+		<TD colspan='2' align='right'></TD>
+		<TD align='left'>
+			<INPUT type='submit' name='txtBarcodeAdd' id='txtBarcodeAdd' value='Add'>
+			<INPUT type='submit' name='txtBarcodeRemove' id='txtBarcodeRemove' value='Remove'>
+		</TD>
+	</TR>
+	<TR>
+		<TD colspan='2' align='right'></TD>
+		<TD align='left'>
+			<SELECT size='5' name='txtBarcodeList' id='txtBarcodeList' style="width:150px">
+			</SELECT>
+		</TD>
+	</TR>
+	<TR>
+		<TD colspan='2' align='left'>
+			<INPUT type='radio' name='txtInterval' id='txtInterval' value='continuous'>
+			<FONT color="#0878A6" face="Verdana,Arial,Helvetica" size="2"><B>Continuous Range of Items</B></FONT>
+		</TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD colspan='2' align='right'>
+			<FONT color="#0878A6" face="Verdana,Arial,Helvetica" size="2"><B>Range Check on: </B></FONT>
+		</TD>
+		<TD align='left'>
+			<INPUT type='radio' name='txtRangeCheck' id='txtRangeCheck' value='barcode' checked>
+			<FONT color="#0878A6" face="Verdana,Arial,Helvetica" size="2"><B>&nbsp;Barcode</B></FONT>
+			<INPUT type='radio' name='txtRangeCheck' id='txtRangeCheck' value='dateaccessioned'>
+			<FONT color="#0878A6" face="Verdana,Arial,Helvetica" size="2"><B>&nbsp;Date Accessioned</B></FONT>
+			<INPUT type='radio' name='txtRangeCheck' id='txtRangeCheck' value='classification'>
+			<FONT color="#0878A6" face="Verdana,Arial,Helvetica" size="2"><B>&nbsp;Classification #</B></FONT>
+		</TD>
+	</TR>
+	<TR>
+		<TD colspan='2' align='right'>
+			<FONT color="#0878A6" face="Verdana,Arial,Helvetica" size="2"><B>From: </B></FONT>
+		</TD>
+		<TD align='left'>
+			<INPUT type='text' name='txtFrom' id='txtFrom' value=''>
+		</TD>
+	</TR>
+	<TR>
+		<TD colspan='2' align='right'>
+			<FONT color="#0878A6" face="Verdana,Arial,Helvetica" size="2"><B>To: </B></FONT>
+		</TD>
+		<TD align='left'>
+			<INPUT type='text' name='txtTo' id='txtTo' value=''>
+		</TD>
+	</TR>
+	<TR>
+		<TD colspan='3' align='left'>
+			<INPUT type='submit' name='txtBarcodeAdd' id='txtBarcodeAdd' value='Generate Barcodes'>
+		</TD>
+	</TR>
+</TABLE>
